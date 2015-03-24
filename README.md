@@ -2,7 +2,7 @@
 
 ###`Rated - 18`
 
-You are to create a function that can check and identify if a sentence contain vulgar words
+You are to create a function that can check and identify vulgar words in a sentence.
 
 Your Vulgar class (function) instance should contain a function `check()` that returns true when a vulgar word is present in the sentence.
 Other instance variable include the following
