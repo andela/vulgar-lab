@@ -10,8 +10,7 @@ Other instance variable include the following
 + `content`: (_object_) should return the first vulgar word in the sentence as an array
 + `count`: (_number_) should return the length of `content`
 + `original`: (_string_)  should return the original sentence
-+ `isVulgar`: (
-_boolean_) should return true if the sentence contains a vulgar word
++ `isVulgar`: (_boolean_) should return true if the sentence contains a vulgar word
 
 
 The `fixedSentence()` should return the sentence, replacing the vulgar words with **x_X**
