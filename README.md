@@ -4,16 +4,17 @@
 
 You are to create a function that can check and identify if a sentence contain vulgar words
 
-Your class (function) should contain a function `check()` that return true when a vulgar word is present in the sentence.
+Your Vulgar class (function) instance should contain a function `check()` that returns true when a vulgar word is present in the sentence.
 Other instance variable include the following
 
-+ `content`: _object_ should return the first vulgar word in the sentence as an array
-+ `count`: _number_ should return the length of `content`
-+ `original`: _string_  should return the original sentence
-+ `isVulgar`: _boolean_ should return true if the sentence contains a vulgar word
++ `content`: (_object_) should return the first vulgar word in the sentence as an array
++ `count`: (_number_) should return the length of `content`
++ `original`: (_string_)  should return the original sentence
++ `isVulgar`: (
+_boolean_) should return true if the sentence contains a vulgar word
 
 
-The `fixedSentence()` should return the sentence, replacing the vulgar words with a **x_X**
+The `fixedSentence()` should return the sentence, replacing the vulgar words with **x_X**
 
 
 
