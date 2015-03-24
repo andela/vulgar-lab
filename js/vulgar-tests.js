@@ -2,7 +2,7 @@
   'use strict';
   describe("Vulgar", function() {
 
-    it('.isVulgar should not be defined for `go hard or go home`', function() {
+    it('.isVulgar should be undefined for `go hard or go home`, and false after calling .check()', function() {
       var vulgar = new Vulgar('go hard or go home');
       expect(vulgar.isVulgar).toBeUndefined();
       expect(vulgar.check()).toBeFalsy();
@@ -16,17 +16,16 @@
     });
 
     it('.original should return `no NeW friends` for `no NeW friends`', function() {
-      var vulgar = new Vulgar('i love baking soda');
+      var vulgar = new Vulgar('no NeW friends');
       expect(vulgar.original).toBe('no NeW friends');
       expect(vulgar.check()).toBeFalsy();
     });
 
-    it('.isVulgar should return true for `no one likes an asshole anyways`', function() {
-      var vulgar = new Vulgar('no one likes an asshole anyways');
+    it('.isVulgar should return true for `look, another sHitHead`', function() {
+      var vulgar = new Vulgar('look, another sHitHead');
       expect(vulgar.check()).toBeTruthy();
       expect(vulgar.isVulgar).toBeTruthy();
     });
-
 
     it('.count should return 1 for `no one likes an asshole anyways`', function() {
       var vulgar = new Vulgar('no one likes an asshole anyways');
@@ -36,7 +35,6 @@
 
     it('.check() should return true for `fUcK boy`', function() {
       var vulgar = new Vulgar('fUcK boy');
-      expect(vulgar.isVulgar).toBeUndefined();
       expect(vulgar.check()).toBeTruthy();
       expect(vulgar.isVulgar).toBeTruthy();
     });
@@ -49,9 +47,7 @@
 
     it('.check() should return true for `damn, sHiT got real`', function() {
       var vulgar = new Vulgar('damn, sHiT got real');
-      expect(vulgar.isVulgar).toBeUndefined();
       expect(vulgar.check()).toBeTruthy();
-      expect(vulgar.content).toEqual(['sHiT']);
       expect(vulgar.isVulgar).toBeTruthy();
     });
 
